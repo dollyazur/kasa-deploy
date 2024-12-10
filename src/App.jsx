@@ -1,11 +1,15 @@
-import logo from "./logo.svg";
+import image from "./images/Header/Desktop/Screen=Desktop, Active=Accueil.png";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src={image}
+          className="header-image"
+          alt="représentation du header"
+        />
         <p>da web inside</p>
         <a
           className="App-link"
