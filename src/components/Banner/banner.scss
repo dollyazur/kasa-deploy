@@ -1,7 +1,7 @@
 .banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,7 +9,8 @@
 
 .banner img {
   width: 100%;
-  height: 100%;
+  height: 220px;
+  border-radius: 25px;
   object-fit: cover;
   position: absolute; /* L'image devient un fond */
   z-index: -1; /* Envoyée derrière le texte */

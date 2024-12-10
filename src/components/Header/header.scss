@@ -1,11 +1,3 @@
 .header {
-  width: 100%;
-  height: 100vh; /* Hauteur : 100% de la fenêtre */
-  background-color: red;
-}
-
-.header img {
-  width: 100%; /* L'image occupe toute la largeur */
-  height: 100%; /* L'image occupe toute la hauteur */
-  object-fit: cover; /* L'image reste proportionnelle */
+  margin-top: 30px;
 }
