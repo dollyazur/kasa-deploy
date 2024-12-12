@@ -2,22 +2,20 @@ import React from "react";
 
 import Header from "../components/Header/Header.jsx";
 import Banner from "../components/Banner/Banner.jsx";
-import image1 from "../images/images_sources/Image_source_1.png";
-import Cards from "../components/Cards/Card.jsx";
+
+import image2 from "../images/images_sources/Image_source_2.png";
 import Footer from "../components/Footer/Footer.jsx";
 
-function Home() {
+function Apropos() {
   return (
-    <div>
+    <div className="Apropos">
       <Header />
 
-      <Banner image={image1} text="Chez vous, partout et ailleurs" />
-
-      <Cards />
+      <Banner image={image2} />
 
       <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Apropos;

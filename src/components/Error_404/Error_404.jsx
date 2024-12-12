@@ -7,7 +7,7 @@ function Error_404() {
     <div className="error_404">
       <img src={image} alt="404 en orange" />
       <h2>Oups! La page que vous demandez n'existe pas.</h2>
-      <a href="/Home">Retourner sur la page d'accueil</a>
+      <a href="/">Retourner sur la page d'accueil</a>
     </div>
   );
 }

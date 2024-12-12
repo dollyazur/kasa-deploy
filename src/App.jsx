@@ -3,26 +3,27 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import "./App.css";
 import Home from "./pages/Home.jsx";
-import APropos from "./pages/APropos.jsx";
 import FicheLogement from "./pages/FicheLogement.jsx";
+import Apropos from "./pages/Propos.jsx";
+
 import Erreur from "./pages/Erreur.jsx";
 
 const router = createBrowserRouter([
   //dans le tableau, on va préciser les différentes routes
   {
     //définir les différentes routes
-    path: "/Home", //défini par propriété path qui va dénir le chemin, ex page d'accueil
+    path: "/", //défini par propriété path qui va dénir le chemin, ex page d'accueil
     element: <Home />, //element à rendre lorsque cette page est chargé, il suffit de mettre du jsx
   },
 
   {
-    path: "/FicheLogement",
+    path: "/fichelogement",
     element: <FicheLogement />,
   },
 
   {
-    path: "/APropos",
-    element: <APropos />,
+    path: "/apropos",
+    element: <Apropos />,
   },
 
   {
