@@ -1,45 +1,38 @@
-import { createBrowserRouter } from "react-router-dom";
 import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import "./App.css";
-import Header from "./components/Header/Header.jsx";
-import Banner from "./components/Banner/Banner.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import APropos from "./pages/APropos.jsx";
+import FicheLogement from "./pages/FicheLogement.jsx";
+import Erreur from "./pages/Erreur.jsx";
 
 const router = createBrowserRouter([
   //dans le tableau, on va préciser les différentes routes
   {
     //définir les différentes routes
-    path: "/home", //défini par propriété path qui va dénir le chemin, ex page d'accueil
-    element: <div>Page d'accueil</div>, //element à rendre lorsque cette page est chargé, il suffit de mettre du jsx
+    path: "/Home", //défini par propriété path qui va dénir le chemin, ex page d'accueil
+    element: <Home />, //element à rendre lorsque cette page est chargé, il suffit de mettre du jsx
   },
 
   {
-    path: "/fiche_logement",
-    element: <div>Fiche des logements</div>,
+    path: "/FicheLogement",
+    element: <FicheLogement />,
   },
 
   {
-    path: "/a_propos",
-    element: <div>A propos</div>,
+    path: "/APropos",
+    element: <APropos />,
   },
 
   {
-    path: "/erreur",
-    element: <div>Erreur 404</div>,
+    path: "*", //route generique pour les erreurs
+    element: <Erreur />,
   },
 ]);
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <header className="App-header"></header>
-      <Banner />
-      <banner className="App-banner"></banner>
-      <Footer />
-      <footer className="App-footer"></footer>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
