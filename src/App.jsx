@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Banner from "./components/Banner/Banner.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 const router = createBrowserRouter([
   //dans le tableau, on va préciser les différentes routes
@@ -35,6 +36,8 @@ function App() {
       <header className="App-header"></header>
       <Banner />
       <banner className="App-banner"></banner>
+      <Footer />
+      <footer className="App-footer"></footer>
     </div>
   );
 }
