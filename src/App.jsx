@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home.jsx";
 import FicheLogement from "./pages/FicheLogement.jsx";
-import Apropos from "./pages/Propos.jsx";
+import Propos from "./pages/Propos.jsx";
 
 import Erreur from "./pages/Erreur.jsx";
 
@@ -22,8 +22,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/apropos",
-    element: <Apropos />,
+    path: "/propos",
+    element: <Propos />,
   },
 
   {

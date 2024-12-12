@@ -6,9 +6,9 @@ import Banner from "../components/Banner/Banner.jsx";
 import image2 from "../images/images_sources/Image_source_2.png";
 import Footer from "../components/Footer/Footer.jsx";
 
-function Apropos() {
+function Propos() {
   return (
-    <div className="Apropos">
+    <div className="Propos">
       <Header />
 
       <Banner image={image2} />
@@ -18,4 +18,4 @@ function Apropos() {
   );
 }
 
-export default Apropos;
+export default Propos;
