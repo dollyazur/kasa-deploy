@@ -2,9 +2,9 @@ import React from "react";
 
 import Header from "../components/Header/Header.jsx";
 import Banner from "../components/Banner/Banner.jsx";
-import image1 from "../images/images_sources/Image_source_1.png";
 import Cards from "../components/Cards/Card.jsx";
 import Footer from "../components/Footer/Footer.jsx";
+import image1 from "../images/images_sources/Image_source_1.png";
 
 function Home() {
   return (
