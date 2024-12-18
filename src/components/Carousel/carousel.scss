@@ -7,20 +7,21 @@
 }
 
 .carousel__image {
+  object-fit: cover;
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  height: 415px;
+  border-radius: 25px;
   /* Image principale */
 }
 
 .carousel__counter {
   position: absolute;
   bottom: 10px;
-  background: rgba(0, 0, 0, 0.5);
+
   color: white;
   padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
+
+  font-size: 20px;
 }
 
 .carousel__arrow {
@@ -30,11 +31,6 @@
   background: none; /* Pas de fond pour le bouton */
   border: none; /* Pas de bordure */
   cursor: pointer;
-}
-
-.carousel__arrow img {
-  width: 30px; /* Taille de la flèche */
-  height: 30px;
 }
 
 .carousel__arrow--left {
