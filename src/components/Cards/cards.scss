@@ -1,0 +1,14 @@
+// Styles pour les étoiles (rating)
+.fiche-logement__rating {
+  display: flex;
+  gap: 5px; // Espacement entre les étoiles
+}
+
+.fiche-logement__star {
+  font-size: 24px;
+  color: #e3e3e3; // Couleur des étoiles vides
+}
+
+.fiche-logement__star.filled {
+  color: #ff6060; // Couleur des étoiles remplies
+}
