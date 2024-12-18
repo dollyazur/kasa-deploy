@@ -8,8 +8,8 @@ import { useFetch } from "../useFetch";
 import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "../components/Cards/cards.scss";
-import Carousel from "../components/Carousel/Carousel.jsx"; // Imaginons que ce composant existe
-import Collapse from "../components/Collapse/Collapse.jsx"; // Imaginons que ce composant existe
+import Carousel from "../components/Carousel/Carousel.jsx";
+import Collapse from "../components/Collapse/Collapse.jsx";
 
 //import "";
 // On importe les styles spécifiques pour cette page.

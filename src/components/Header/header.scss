@@ -1,8 +1,29 @@
-.header {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 30px;
   margin-top: 30px;
 }
-.a-propos-accueil {
+.header-img {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+nav {
   display: flex;
-  justify-content: flex-end;
-  gap: 20px;
+  align-items: flex-end;
+  margin-top: 0px;
+  gap: 100px;
+  justify-content: end;
+}
+
+/*** lien vers la section hebergement, lien vers la section activité***/
+.a-accueil,
+.a-a-propos {
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.main-container {
+  width: 100%;
 }
