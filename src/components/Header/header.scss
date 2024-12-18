@@ -18,10 +18,13 @@ nav {
 }
 
 /*** lien vers la section hebergement, lien vers la section activité***/
-.a-accueil,
-.a-a-propos {
+.accueil a,
+.a-propos a {
   font-weight: 500;
   padding-top: 10px;
+  color: black;
+  font-size: xx-large;
+  text-decoration: none;
 }
 
 .main-container {
