@@ -7,14 +7,14 @@ header {
 }
 .header-img {
   padding-top: 30px;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 nav {
   display: flex;
-  align-items: flex-end;
-  margin-top: 0px;
+
   gap: 100px;
   justify-content: end;
+  padding-right: 50px;
 }
 
 /*** lien vers la section hebergement, lien vers la section activité***/

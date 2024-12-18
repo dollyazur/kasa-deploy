@@ -1,0 +1,46 @@
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel__image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* Image principale */
+}
+
+.carousel__counter {
+  position: absolute;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.carousel__arrow {
+  position: absolute;
+  top: 50%; /* Aligne la flèche au centre verticalement */
+  transform: translateY(-50%);
+  background: none; /* Pas de fond pour le bouton */
+  border: none; /* Pas de bordure */
+  cursor: pointer;
+}
+
+.carousel__arrow img {
+  width: 30px; /* Taille de la flèche */
+  height: 30px;
+}
+
+.carousel__arrow--left {
+  left: 10px; /* Flèche gauche à gauche */
+}
+
+.carousel__arrow--right {
+  right: 10px; /* Flèche droite à droite */
+}
