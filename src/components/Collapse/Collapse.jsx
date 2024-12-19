@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Collapse/collapse.scss";
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -6,10 +7,12 @@ function Collapse({ title, children }) {
   return (
     <div className="collapse">
       <div className="collapse__header" onClick={() => setIsOpen(!isOpen)}>
-        <h2>{title}</h2>
-        <button>{isOpen ? "-" : "+"}</button>
+        <h2 className="collapse__title">{title}</h2>
+        <button className="collapse__button">{isOpen ? "▲" : "▼"}</button>
       </div>
-      {isOpen && <div className="collapse__content">{children}</div>}
+      <div className={`collapse__content ${isOpen ? "open" : ""}`}>
+        {children}
+      </div>
     </div>
   );
 }

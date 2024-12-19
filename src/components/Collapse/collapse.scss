@@ -1,0 +1,45 @@
+.collapse {
+  width: 123px;
+  margin: 15px auto; /* 15px de marge verticale et centré horizontalement */
+  border-radius: 5px;
+  background-color: #ff6060;
+  overflow: hidden; /* Empêche le contenu de dépasser le bloc */
+
+  &__header {
+    display: flex; /* Affiche les éléments en ligne (titre + flèche) */
+    justify-content: space-between; /* Espace entre le titre et la flèche */
+    align-items: center; /* Centre verticalement les éléments */
+    padding: 0 10px; /* Petit espace à gauche et à droite */
+    height: 52px; /* Fait que le header occupe toute la hauteur */
+    cursor: pointer;
+  }
+
+  &__title {
+    color: white;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  &__content {
+    max-height: 0; /* Contenu caché par défaut */
+    padding: 0 10px; /* Padding uniquement horizontal */
+    font-size: 12px; /* Taille du texte */
+    color: white; /* Texte blanc */
+    background-color: #ff6060; /* Même couleur que le header */
+    overflow: hidden; /* Empêche le contenu de déborder */
+    transition: max-height 0.3s ease, padding 0.3s ease; /* Transition pour l'ouverture */
+  }
+
+  &__content.open {
+    max-height: 200px; /* Hauteur maximale pour afficher le contenu */
+    padding: 10px; /* Ajoute du padding une fois ouvert */
+  }
+}
