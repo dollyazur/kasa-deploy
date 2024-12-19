@@ -1,12 +1,12 @@
-header {
+.header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+
+  align-items: center;
   padding-bottom: 30px;
-  margin-top: 30px;
 }
 .header-img {
-  padding-top: 30px;
+  display: flex;
   padding-left: 50px;
 }
 nav {
@@ -20,11 +20,15 @@ nav {
 /*** lien vers la section hebergement, lien vers la section activité***/
 .accueil a,
 .a-propos a {
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 10px;
   color: black;
-  font-size: xx-large;
-  text-decoration: none;
+  font-size: x-large;
+}
+
+.accueil a:hover,
+.a-propos a:hover {
+  border-bottom: 2px solid black;
 }
 
 .main-container {
