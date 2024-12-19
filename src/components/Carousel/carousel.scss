@@ -28,6 +28,11 @@
   background: none; /* Pas de fond pour le bouton */
   border: none; /* Pas de bordure */
   cursor: pointer;
+  outline: none; /* Supprime la bordure noire */
+}
+
+.carousel__arrow:focus {
+  outline: none; /* Empêche le contour noir/bleu au focus */
 }
 
 .carousel__arrow--left {
