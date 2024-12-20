@@ -21,11 +21,24 @@
   }
 
   &__button {
-    background: none;
+    background-image: url("../../images/arrow_collapse/arrow_down.png"); /* Image flèche vers le bas */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     border: none;
-    color: white;
-    font-size: 16px;
+    background-color: transparent;
+    width: 20px; /* Taille adaptée à tes images */
+    height: 20px;
     cursor: pointer;
+    outline: none;
+
+    &:focus {
+      outline: none; /* Désactive le contour au focus */
+    }
+
+    &.open {
+      background-image: url("../../images/arrow_collapse/arrow_up.png"); /* Image flèche vers le haut */
+    }
   }
 
   &__content {
