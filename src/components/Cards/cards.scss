@@ -1,18 +1,61 @@
+// Grille pour organiser les cartes
+.cards-container {
+  display: grid; /* On active la grille */
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+  gap: 20px; /* Espacement entre les cartes */
+  padding: 20px; /* Espace autour de la grille */
+  justify-items: center;
+}
+
+// Styles pour chaque carte
+.card {
+  position: relative; /* Nécessaire pour positionner le titre sur l'image */
+  padding: none;
+
+  width: 340px; /* Largeur fixe */
+  height: 340px; /* Hauteur fixe */
+  border: 1px solid #ddd; /* Petite bordure grise */
+  border-radius: 8px; /* Coins arrondis */
+  overflow: hidden; /* Empêche le contenu de déborder */
+  text-align: center; /* Centre le contenu */
+  background-color: #fff; /* Fond blanc */
+  transition: transform 0.3s ease-in-out; /* Animation fluide au survol */
+
+  &:hover {
+    transform: scale(1.05); /* Agrandit légèrement la carte au survol */
+  }
+}
+
+// Image de la carte
+.card__image {
+  width: 100%; /* L'image remplit toute la largeur de la carte */
+  height: 100%; /* L'image remplit toute la hauteur de la carte */
+  object-fit: cover; /* Adapte l'image sans la déformer */
+}
+
+// Styles pour le titre des cartes
+.card__title {
+  position: absolute; /* Positionné par rapport à la carte */
+  bottom: 10px; /* À 10px du bas de la carte */
+  left: 10px; /* À 10px du côté gauche */
+  color: white; /* Texte blanc */
+  font-size: 14px; /* Taille du texte */
+
+  padding: 5px 10px; /* Espace autour du texte */
+  border-radius: 5px; /* Coins arrondis pour un effet joli */
+}
+
 // Styles pour les étoiles (rating)
 .fiche-logement__rating {
   display: flex;
-  gap: 5px; // Espacement entre les étoiles
+  gap: 5px; /* Espacement entre les étoiles */
 }
 
 .fiche-logement__star {
   font-size: 24px;
-  color: #e3e3e3; // Couleur des étoiles vides
+  color: #e3e3e3; /* Couleur des étoiles vides */
 }
 
 .fiche-logement__star.filled {
-  color: #ff6060; // Couleur des étoiles remplies
-}
-
-.card__title {
-  color: white;
+  color: #ff6060; /* Couleur des étoiles remplies */
 }
