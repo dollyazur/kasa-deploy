@@ -1,5 +1,5 @@
 .collapse {
-  width: 123px;
+  max-width: 1024px;
   margin: 15px auto; /* 15px de marge verticale et centré horizontalement */
   border-radius: 5px;
   background-color: #ff6060;
@@ -16,7 +16,7 @@
 
   &__title {
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     text-align: left;
   }
 
@@ -29,17 +29,24 @@
   }
 
   &__content {
-    max-height: 0; /* Contenu caché par défaut */
-    padding: 0 10px; /* Padding uniquement horizontal */
-    font-size: 12px; /* Taille du texte */
-    color: white; /* Texte blanc */
-    background-color: #ff6060; /* Même couleur que le header */
+    max-height: 0;
+    margin: 0; /* Contenu caché par défaut */
+    padding: 0; /* Padding uniquement horizontal */
+
+    background-color: #f7f7f7; /* Même couleur que le header */
     overflow: hidden; /* Empêche le contenu de déborder */
     transition: max-height 0.3s ease, padding 0.3s ease; /* Transition pour l'ouverture */
   }
 
   &__content.open {
-    max-height: 200px; /* Hauteur maximale pour afficher le contenu */
+    max-height: 500px; /* Hauteur maximale pour afficher le contenu */
     padding: 10px; /* Ajoute du padding une fois ouvert */
+  }
+
+  &__text {
+    font-size: 14px;
+    color: black;
+    margin: 0; /* Supprime les marges par défaut des paragraphes */
+    text-align: left;
   }
 }

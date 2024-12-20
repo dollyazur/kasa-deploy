@@ -11,7 +11,7 @@ function Collapse({ title, children }) {
         <button className="collapse__button">{isOpen ? "▲" : "▼"}</button>
       </div>
       <div className={`collapse__content ${isOpen ? "open" : ""}`}>
-        {children}
+        <p className="collapse__text">{children}</p>
       </div>
     </div>
   );
