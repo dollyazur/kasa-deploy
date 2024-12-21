@@ -2,16 +2,17 @@
 .cards-container {
   display: grid; /* On active la grille */
   grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
-  gap: 20px; /* Espacement entre les cartes */
-  padding: 20px; /* Espace autour de la grille */
+  gap: 40px; /* Espacement entre les cartes */
+  padding: 40px; /* Espace autour de la grille */
   justify-items: center;
+  background-color: #f7f7f7;
+  border-radius: 20px;
 }
 
 // Styles pour chaque carte
 .card {
   position: relative; /* Nécessaire pour positionner le titre sur l'image */
   padding: none;
-  width: 340px; /* Largeur fixe */
   height: 340px; /* Hauteur fixe */
   border: 1px solid #ddd; /* Petite bordure grise */
   border-radius: 8px; /* Coins arrondis */
