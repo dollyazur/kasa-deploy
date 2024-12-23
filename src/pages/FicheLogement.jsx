@@ -66,49 +66,52 @@ function FicheLogement() {
         <Carousel pictures={pictures} />
         {/* On affiche le composant `Carousel` en lui passant les images du logement */}
 
-        {/* Informations principales */}
-        <div className="fiche-logement__header">
-          <div className="fiche-logement__info">
-            <h1 className="fiche-logement__title">{title}</h1>
+        {/* Nouvelle div regroupant le header et le rating */}
+        <div className="fiche-logement__header-wrapper">
+          {/* Informations principales */}
+          <div className="fiche-logement__header">
+            <div className="fiche-logement__info">
+              <h1 className="fiche-logement__title">{title}</h1>
 
-            {/* Afficher la location sous le titre */}
-            <p className="fiche-logement__location">{location}</p>
+              {/* Afficher la location sous le titre */}
+              <p className="fiche-logement__location">{location}</p>
 
-            <div className="fiche-logement__tags">
-              {tags.map((tag, index) => (
-                <span key={index} className="fiche-logement__tag">
-                  {tag}
-                </span>
-              ))}
-              {/* On affiche chaque tag */}
+              <div className="fiche-logement__tags">
+                {tags.map((tag, index) => (
+                  <span key={index} className="fiche-logement__tag">
+                    {tag}
+                  </span>
+                ))}
+                {/* On affiche chaque tag */}
+              </div>
+            </div>
+
+            {/* Hôte */}
+            <div className="fiche-logement__host">
+              <p className="fiche-logement__host-name">{host.name}</p>
+              <img
+                src={host.picture}
+                alt={host.name}
+                className="fiche-logement__host-picture"
+              />
+              {/* Affichage de l'hôte */}
             </div>
           </div>
 
-          {/* Hôte */}
-          <div className="fiche-logement__host">
-            <p className="fiche-logement__host-name">{host.name}</p>
-            <img
-              src={host.picture}
-              alt={host.name}
-              className="fiche-logement__host-picture"
-            />
-            {/* Affichage de l'hôte */}
+          {/* Note */}
+          <div className="fiche-logement__rating">
+            {[...Array(5)].map((_, index) => (
+              <span
+                key={index}
+                className={`fiche-logement__star ${
+                  index < rating ? "filled" : "empty"
+                }`}
+              >
+                ★
+              </span>
+            ))}
+            {/* On affiche les étoiles, les `filled` correspondent au `rating`. */}
           </div>
-        </div>
-
-        {/* Note */}
-        <div className="fiche-logement__rating">
-          {[...Array(5)].map((_, index) => (
-            <span
-              key={index}
-              className={`fiche-logement__star ${
-                index < rating ? "filled" : "empty"
-              }`}
-            >
-              ★
-            </span>
-          ))}
-          {/* On affiche les étoiles, les `filled` correspondent au `rating`. */}
         </div>
 
         {/* Collapses */}

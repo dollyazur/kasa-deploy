@@ -41,4 +41,13 @@ p.fiche-logement__host-name {
 }
 img.fiche-logement__host-picture {
   border-radius: 90px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  height: 60%;
+}
+.fiche-logement__collapses {
+  display: flex;
+  gap: 80px;
 }
