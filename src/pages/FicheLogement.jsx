@@ -10,6 +10,7 @@ import Footer from "../components/Footer/Footer.jsx";
 import "../components/Cards/cards.scss";
 import Carousel from "../components/Carousel/Carousel.jsx";
 import Collapse from "../components/Collapse/Collapse.jsx";
+import "../components/Description/description.scss";
 
 //import "";
 // On importe les styles spécifiques pour cette page.
@@ -41,8 +42,16 @@ function FicheLogement() {
     // Si aucun logement avec cet `id` n’est trouvé, on affiche un message d’erreur.
   }
 
-  const { title, pictures, description, host, rating, tags, equipments } =
-    logement;
+  const {
+    title,
+    pictures,
+    description,
+    host,
+    rating,
+    location,
+    tags,
+    equipments,
+  } = logement;
   // On extrait les données nécessaires du logement trouvé.
 
   return (
@@ -61,6 +70,10 @@ function FicheLogement() {
         <div className="fiche-logement__header">
           <div className="fiche-logement__info">
             <h1 className="fiche-logement__title">{title}</h1>
+
+            {/* Afficher la location sous le titre */}
+            <p className="fiche-logement__location">{location}</p>
+
             <div className="fiche-logement__tags">
               {tags.map((tag, index) => (
                 <span key={index} className="fiche-logement__tag">
