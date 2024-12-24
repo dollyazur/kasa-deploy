@@ -63,3 +63,27 @@
     text-align: left;
   }
 }
+
+.fiche-logement__collapses {
+  display: flex;
+  gap: 50px; /* Espacement entre les collapses */
+  align-items: stretch; /* Étire les collapses pour qu'elles aient la même hauteur */
+
+  > .collapse {
+    flex: 1; /* Chaque collapse prend la même largeur */
+    display: flex;
+    flex-direction: column;
+
+    &__content {
+      max-height: 0; /* Contenu caché par défaut */
+      padding: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+
+      &.open {
+        max-height: 500px; /* Ajuste la hauteur maximale en mode ouvert */
+        padding: 10px; /* Ajoute un padding lorsqu'il est ouvert */
+      }
+    }
+  }
+}
