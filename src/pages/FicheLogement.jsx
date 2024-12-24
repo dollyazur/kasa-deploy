@@ -75,15 +75,20 @@ function FicheLogement() {
 
               {/* Afficher la location sous le titre */}
               <p className="fiche-logement__location">{location}</p>
+
+              <div className="fiche-logement__tags">
+                {tags.map((tag, index) => (
+                  <span key={index} className="fiche-logement__tag">
+                    {tag}
+                  </span>
+                ))}
+                {/* On affiche chaque tag */}
+              </div>
             </div>
 
             {/* Hôte */}
             <div className="fiche-logement__host">
-              <p className="fiche-logement__host-name">
-                {host.name.split(" ")[0]}
-                <br />
-                {host.name.split(" ")[1]}
-              </p>
+              <p className="fiche-logement__host-name">{host.name}</p>
               <img
                 src={host.picture}
                 alt={host.name}
@@ -93,33 +98,22 @@ function FicheLogement() {
             </div>
           </div>
 
-          {/*tags et ratings*/}
-          <div className="tags_ratings">
-            <div className="fiche-logement__tags">
-              {tags.map((tag, index) => (
-                <span key={index} className="fiche-logement__tag">
-                  {tag}
-                </span>
-              ))}
-              {/* On affiche chaque tag */}
-            </div>
-
-            {/* Note */}
-            <div className="fiche-logement__rating">
-              {[...Array(5)].map((_, index) => (
-                <span
-                  key={index}
-                  className={`fiche-logement__star ${
-                    index < rating ? "filled" : "empty"
-                  }`}
-                >
-                  ★
-                </span>
-              ))}
-              {/* On affiche les étoiles, les `filled` correspondent au `rating`. */}
-            </div>
+          {/* Note */}
+          <div className="fiche-logement__rating">
+            {[...Array(5)].map((_, index) => (
+              <span
+                key={index}
+                className={`fiche-logement__star ${
+                  index < rating ? "filled" : "empty"
+                }`}
+              >
+                ★
+              </span>
+            ))}
+            {/* On affiche les étoiles, les `filled` correspondent au `rating`. */}
           </div>
         </div>
+
         {/* Collapses */}
         <div className="fiche-logement__collapses">
           <Collapse title="Description">{description}</Collapse>
