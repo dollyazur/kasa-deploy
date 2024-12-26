@@ -56,6 +56,10 @@
   height: 100%; /* L'image remplit toute la hauteur de la carte */
   object-fit: cover; /* Adapte l'image sans la déformer */
   z-index: 0; /* S'assure que l'image reste derrière le contenu */
+
+  @media (max-width: 768px) {
+    height: auto;
+  }
 }
 
 // Styles pour le titre des cartes
