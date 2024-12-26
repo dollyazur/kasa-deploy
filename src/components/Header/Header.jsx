@@ -6,12 +6,12 @@ import "../../components/Header/header.scss";
 function Header() {
   return (
     <div className="header">
-      <img class="header-img" src={image} alt="representation du header" />
+      <img className="header-img" src={image} alt="representation du header" />
       <nav>
-        <div class="accueil">
+        <div className="accueil">
           <a href="/">Accueil</a>
         </div>
-        <div class="a-propos">
+        <div className="a-propos">
           <a href="/Propos">A propos</a>
         </div>
       </nav>
