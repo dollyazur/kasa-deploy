@@ -7,6 +7,13 @@
   justify-items: center;
   background-color: #f7f7f7;
   border-radius: 20px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; /* 1 colonne */
+  }
 }
 
 // Styles pour chaque carte

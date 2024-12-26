@@ -1,8 +1,22 @@
 .header {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+
+  @media (max-width: 1024px) {
+    max-width: 1024px;
+    min-width: 769px;
+    display: flex;
+    margin: auto;
+  }
+  @media (max-width: 768px) {
+    max-width: 768px;
+    min-width: 375px;
+    display: flex;
+    margin: auto;
+  }
 }
 .header-img {
   display: flex;

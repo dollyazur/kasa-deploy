@@ -5,6 +5,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    max-width: 100%;
+    min-width: 769px;
+    display: flex;
+    margin: auto;
+  }
+  @media (max-width: 768px) {
+    max-width: 768px;
+    min-width: 375px;
+    display: flex;
+    margin: auto;
+  }
 }
 
 .banner img {
