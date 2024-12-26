@@ -1,21 +1,12 @@
 .header {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+
   padding-bottom: 30px;
 
-  @media (max-width: 1024px) {
-    max-width: 1024px;
-    min-width: 769px;
+  @media screen and (max-width: 768px) {
     display: flex;
-    margin: auto;
-  }
-  @media (max-width: 768px) {
-    max-width: 768px;
-    min-width: 375px;
-    display: flex;
-    margin: auto;
+    align-items: center;
   }
 }
 .header-img {
@@ -27,6 +18,12 @@ nav {
   gap: 100px;
   justify-content: end;
   padding-right: 45px;
+
+  @media screen and (max-width: 1024px) {
+    nav {
+      gap: 60px;
+    }
+  }
 }
 
 /**lien vers la section hebergement, lien vers la section activité***/

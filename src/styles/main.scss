@@ -4,22 +4,22 @@
 body {
   font-family: "Montserrat", sans-serif;
   margin: auto;
-  justify-content: center;
-  padding-left: 50px;
-  padding-right: 50px;
+
   max-width: 1440px;
   min-width: 375px;
+
   @media screen and (max-width: 1024px) {
     body {
       max-width: 1024px;
       min-width: 769px;
-    }
-  }
-  @media screen and (max-width: 768px) {
-    body {
-      max-width: 768px;
-      min-width: 375px;
-      padding: 0;
+
+      @media screen and (max-width: 768px) {
+        body {
+          max-width: 768px;
+          min-width: 375px;
+          padding: 0;
+        }
+      }
     }
   }
 }

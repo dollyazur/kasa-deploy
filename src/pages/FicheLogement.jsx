@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 
 import { useFetch } from "../useFetch";
 // On importe notre hook personnalisé `useFetch` pour récupérer les données depuis data.json.
-
+import "../styles/main.scss";
 import Header from "../components/Header/Header.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import "../components/Cards/cards.scss";

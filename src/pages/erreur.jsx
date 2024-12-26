@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/main.scss";
 import Header from "../components/Header/Header.jsx";
 import Error404 from "../components/Error_404/Error_404.jsx";
 import Footer from "../components/Footer/Footer.jsx";

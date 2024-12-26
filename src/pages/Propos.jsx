@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../styles/main.scss";
 import Header from "../components/Header/Header.jsx";
 import Banner from "../components/Banner/Banner.jsx";
 

@@ -7,6 +7,7 @@ function Header() {
   return (
     <div className="header">
       <img className="header-img" src={image} alt="representation du header" />
+
       <nav>
         <div className="accueil">
           <a href="/">Accueil</a>
