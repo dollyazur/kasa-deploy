@@ -6,13 +6,6 @@
   align-items: center;
   overflow: hidden;
 
-  @media (max-width: 1024px) {
-    padding-top: 40px;
-  }
-  @media (max-width: 768px) {
-    padding-top: 40px;
-  }
-
   img {
     width: 132.5vh;
     height: 20vh;
@@ -27,12 +20,4 @@
   color: white;
   font-size: 3rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Donne un effet de lisibilité */
-  @media (max-width: 1024px) {
-    display: flex;
-    padding-top: 40px;
-  }
-  @media (max-width: 768px) {
-    display: flex;
-    padding-top: 40px;
-  }
 }
