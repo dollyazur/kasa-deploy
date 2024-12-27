@@ -7,19 +7,12 @@
   justify-items: center;
   background-color: #f7f7f7;
   border-radius: 20px;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-  }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr; /* 1 colonne */
-  }
 }
 
 // Styles pour chaque carte
 .card {
   position: relative; /* Nécessaire pour positionner le titre sur l'image */
-  padding: none;
+  width: 100%;
   height: 340px; /* Hauteur fixe */
   border: 1px solid #ddd; /* Petite bordure grise */
   border-radius: 8px; /* Coins arrondis */
@@ -55,11 +48,6 @@
   width: 100%; /* L'image remplit toute la largeur de la carte */
   height: 100%; /* L'image remplit toute la hauteur de la carte */
   object-fit: cover; /* Adapte l'image sans la déformer */
-  z-index: 0; /* S'assure que l'image reste derrière le contenu */
-
-  @media (max-width: 768px) {
-    height: auto;
-  }
 }
 
 .card__title {
@@ -87,4 +75,28 @@
 
 .fiche-logement__star.filled {
   color: #ff6060; /* Couleur des étoiles remplies */
+}
+// Responsive pour les écrans de 1024px
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 30px; /* Réduction de l'espacement */
+    padding: 20px;
+  }
+
+  .card {
+    height: 300px; /* Ajustement de la hauteur */
+  }
+}
+
+// Responsive pour les écrans de 768px
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    height: 260px;
+  }
 }

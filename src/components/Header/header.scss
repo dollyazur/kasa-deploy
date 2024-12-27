@@ -2,41 +2,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 1rem 2rem;
+  padding-bottom: 40px;
   width: 100%;
-  box-sizing: border-box; /* Inclut le padding dans la largeur */
-  transition: all 0.3s ease-in-out; /* Rend les changements fluides */
-
-  @media screen and (max-width: 1024px) {
-    padding: 1rem 1.5rem; /* Réduit légèrement l’espace horizontal */
-  }
-
-  @media screen and (max-width: 768px) {
-    padding: 0.8rem 1rem; /* Compact sur mobile */
-  }
+  margin: 0 auto;
 }
-.header-img {
-  flex-shrink: 0; /* Empêche l'image de rétrécir */
-  margin-right: 2rem; /* Espace entre l’image et la nav */
-  max-width: 150px; /* Limite la taille de l'image */
-  height: auto; /* Garde le ratio */
 
-  @media screen and (max-width: 768px) {
-    max-width: 100px; /* Taille réduite sur mobile */
-  }
+.header-img {
+  display: flex;
+  padding-left: 20px;
+  max-height: 60px; /* Ajuste la taille si nécessaire */
 }
 nav {
   display: flex;
-  gap: 2rem; /* Espacement dynamique entre les liens */
-  align-items: center;
-
-  @media screen and (max-width: 1024px) {
-    gap: 1.5rem; /* Réduction progressive de l’espacement */
-  }
-
-  @media screen and (max-width: 768px) {
-    gap: 1rem; /* Très compact sur mobile */
-  }
+  gap: 50px; /* Espacement dynamique entre les liens */
+  justify-content: end;
+  padding-right: 20px;
 }
 
 /**lien vers la section hebergement, lien vers la section activité***/
@@ -44,11 +24,32 @@ nav {
 .a-propos a {
   text-decoration: none;
   font-weight: 400;
-  transition: border-bottom 0.3s ease;
+
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
 
   &:hover {
     border-bottom: 2px solid black;
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .header {
+    align-items: center;
+  }
+
+  nav {
+    gap: 20px;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    align-items: center;
+  }
+
+  .banner h2 {
+    font-size: 1.8rem;
   }
 }
