@@ -35,10 +35,35 @@
   outline: none; /* Empêche le contour noir/bleu au focus */
 }
 
-.carousel__arrow--left {
+.carousel__arrow--left,
+.carousel__arrow--left-petit {
   left: 10px; /* Flèche gauche à gauche */
 }
 
-.carousel__arrow--right {
+.carousel__arrow--right,
+.carousel__arrow--right-petit {
   right: 10px; /* Flèche droite à droite */
+}
+
+@media (max-width: 768px) {
+  .carousel__arrow--left,
+  .carousel__arrow--right {
+    visibility: hidden;
+  }
+
+  .carousel__arrow--left-petit,
+  .carousel__arrow--right-petit {
+    visibility: visible;
+  }
+}
+@media (min-width: 768px) {
+  .carousel__arrow--left,
+  .carousel__arrow--right {
+    visibility: visible;
+  }
+
+  .carousel__arrow--left-petit,
+  .carousel__arrow--right-petit {
+    visibility: hidden;
+  }
 }

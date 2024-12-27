@@ -77,3 +77,11 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .fiche-logement__collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

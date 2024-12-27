@@ -55,3 +55,11 @@ p.fiche-logement__host-name {
   justify-content: flex-end;
   padding-right: 7px;
 }
+
+@media (max-width: 768px) {
+  .fiche-logement__host {
+  }
+
+  .fiche-logement__rating {
+  }
+}

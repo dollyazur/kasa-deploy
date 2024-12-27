@@ -10,6 +10,10 @@ import arrowLeft from "../../images/Carrousel_ex/arrow_left.png";
 import arrowRight from "../../images/Carrousel_ex/arrow_right.png";
 // On importe l'image de la flèche droite.
 
+import arrowLeftPetit from "../../images/Carrousel_ex/arrow_left-24px.png";
+
+import arrowRightPetit from "../../images/Carrousel_ex/arrow_right_24px.png";
+
 function Carousel({ pictures }) {
   // Le carrousel reçoit une liste d'images (pictures) depuis le fichier data.json.
 
@@ -69,6 +73,22 @@ function Carousel({ pictures }) {
             onClick={nextSlide}
           >
             <img src={arrowRight} alt="Suivante" />
+            {/* Flèche droite : affiche l'image de la flèche */}
+          </button>
+
+          <button
+            className="carousel__arrow carousel__arrow--left-petit"
+            onClick={prevSlide}
+          >
+            <img src={arrowLeftPetit} alt="Précédente" />
+            {/* Flèche gauche : affiche l'image de la flèche */}
+          </button>
+
+          <button
+            className="carousel__arrow carousel__arrow--right-petit"
+            onClick={nextSlide}
+          >
+            <img src={arrowRightPetit} alt="Suivante" />
             {/* Flèche droite : affiche l'image de la flèche */}
           </button>
         </>
