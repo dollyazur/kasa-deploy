@@ -1,45 +1,54 @@
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem 2rem;
+  width: 100%;
+  box-sizing: border-box; /* Inclut le padding dans la largeur */
+  transition: all 0.3s ease-in-out; /* Rend les changements fluides */
 
-  padding-bottom: 30px;
+  @media screen and (max-width: 1024px) {
+    padding: 1rem 1.5rem; /* Réduit légèrement l’espace horizontal */
+  }
 
   @media screen and (max-width: 768px) {
-    display: flex;
-    align-items: center;
+    padding: 0.8rem 1rem; /* Compact sur mobile */
   }
 }
 .header-img {
-  display: flex;
-  padding-left: 50px;
+  flex-shrink: 0; /* Empêche l'image de rétrécir */
+  margin-right: 2rem; /* Espace entre l’image et la nav */
+  max-width: 150px; /* Limite la taille de l'image */
+  height: auto; /* Garde le ratio */
+
+  @media screen and (max-width: 768px) {
+    max-width: 100px; /* Taille réduite sur mobile */
+  }
 }
 nav {
   display: flex;
-  gap: 100px;
-  justify-content: end;
-  padding-right: 45px;
+  gap: 2rem; /* Espacement dynamique entre les liens */
+  align-items: center;
 
   @media screen and (max-width: 1024px) {
-    nav {
-      gap: 60px;
-    }
+    gap: 1.5rem; /* Réduction progressive de l’espacement */
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 1rem; /* Très compact sur mobile */
   }
 }
 
 /**lien vers la section hebergement, lien vers la section activité***/
 .accueil a,
 .a-propos a {
+  text-decoration: none;
   font-weight: 400;
-  padding-top: 10px;
+  transition: border-bottom 0.3s ease;
   color: black;
-  font-size: x-large;
-}
+  font-size: 1rem;
 
-.accueil a:hover,
-.a-propos a:hover {
-  border-bottom: 2px solid black;
-}
-
-.main-container {
-  width: 100%;
+  &:hover {
+    border-bottom: 2px solid black;
+  }
 }

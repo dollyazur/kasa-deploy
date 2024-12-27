@@ -1,19 +1,14 @@
 .footer {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: center;
   padding-top: 60px;
+  width: 100%;
 
   @media (max-width: 1024px) {
-    max-width: 1024px;
-    min-width: 769px;
-    display: flex;
-    justify-content: center;
+    padding-top: 40px;
   }
   @media (max-width: 768px) {
-    max-width: 768px;
-    min-width: 375px;
-    display: flex;
-    justify-content: center;
+    padding-top: 20px;
   }
 }
