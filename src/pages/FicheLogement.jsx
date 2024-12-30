@@ -38,8 +38,12 @@ function FicheLogement() {
   // On cherche dans les données le logement qui correspond à l’`id` récupéré.
 
   if (!logement) {
-    return <div>Erreur : Aucun logement trouvé</div>;
-    // Si aucun logement avec cet `id` n’est trouvé, on affiche un message d’erreur.
+    // Si aucun logement n'est trouvé, redirection vers la page d'erreur.
+    React.useEffect(() => {
+      navigate("/erreur");
+    }, [navigate]);
+    return null;
+    // On retourne `null` car la redirection est en cours.
   }
 
   const {
