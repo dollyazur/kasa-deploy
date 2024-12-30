@@ -6,8 +6,13 @@ import "../../components/Header/header.scss";
 function Header() {
   return (
     <div className="header">
-      <img className="header-img" src={image} alt="representation du header" />
-
+      <a href="/">
+        <img
+          className="header-img"
+          src={image}
+          alt="representation du header"
+        />
+      </a>
       <nav>
         <div className="accueil">
           <a href="/">Accueil</a>

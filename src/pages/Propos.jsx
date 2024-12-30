@@ -33,17 +33,19 @@ export const aboutList = [
 function Propos() {
   return (
     <div className="Propos">
-      <Header />
+      <div className="propos__content">
+        {/* Conteneur pour le contenu principal de la page */}
+        <Header />
 
-      <Banner image={image2} />
-      <div className="Propos__collapses">
-        {aboutList.map((item, index) => (
-          <Collapse key={index} title={item.title}>
-            {item.content}
-          </Collapse>
-        ))}
+        <Banner image={image2} />
+        <div className="Propos__collapses">
+          {aboutList.map((item, index) => (
+            <Collapse key={index} title={item.title}>
+              {item.content}
+            </Collapse>
+          ))}
+        </div>
       </div>
-
       <Footer />
     </div>
   );

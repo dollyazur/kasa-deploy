@@ -69,6 +69,7 @@
   display: flex;
   gap: 50px; /* Espacement entre les collapses */
   align-items: stretch; /* Étire les collapses pour qu'elles aient la même hauteur */
+  padding-top: 30px;
 
   > .collapse {
     flex: 1; /* Chaque collapse prend la même largeur */

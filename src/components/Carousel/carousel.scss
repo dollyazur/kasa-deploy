@@ -38,11 +38,13 @@
 .carousel__arrow--left,
 .carousel__arrow--left-petit {
   left: 10px; /* Flèche gauche à gauche */
+  padding-left: 0px;
 }
 
 .carousel__arrow--right,
 .carousel__arrow--right-petit {
   right: 10px; /* Flèche droite à droite */
+  padding-right: 0px;
 }
 
 @media (max-width: 768px) {

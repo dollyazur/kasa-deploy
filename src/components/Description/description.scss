@@ -52,12 +52,22 @@ p.fiche-logement__host-name {
   color: white;
   padding: 5px 40px;
   font-weight: 500;
+  white-space: nowrap; /* Empêche le texte de se couper à la ligne */
 }
 
 .fiche-logement__rating {
   display: flex;
   justify-content: flex-end;
   padding-right: 7px;
+}
+
+@media (max-width: 1024px) {
+  .fiche-logement__tag {
+    display: flex;
+    justify-content: center;
+    font-size: 14px; /* Réduit la taille du texte */
+    white-space: nowrap; /* Empêche le texte de se couper à la ligne */
+  }
 }
 
 @media (max-width: 768px) {
@@ -87,13 +97,19 @@ p.fiche-logement__host-name {
   /* Les tags */
   .fiche-logement__tags {
     display: flex;
+
     flex-wrap: nowrap; /* Pas de retour à la ligne */
     gap: 10px; /* Espacement réduit entre les tags */
   }
 
   .fiche-logement__tag {
+    display: flex;
+    justify-content: center;
     font-size: 12px; /* Réduit la taille du texte */
     padding: 3px 20px; /* Réduit le padding */
+    flex-shrink: 1; /* Autorise le rétrécissement des tags */
+    min-width: 80px; /* Assure que les tags ne deviennent pas trop petits */
+    white-space: nowrap; /* Empêche le texte de se couper à la ligne */
   }
 
   /* Les ratings */
