@@ -1,3 +1,7 @@
+.fiche-logement__content {
+  margin: 0 40px; /* Applique les marges à droite et à gauche du contenu */
+}
+
 .fiche-logement__header {
   display: flex;
   justify-content: space-between;
@@ -57,19 +61,66 @@ p.fiche-logement__host-name {
 }
 
 @media (max-width: 768px) {
-  .fiche-logement__host {
-    display: flex;
-    margin-top: 130px;
+  .fiche-logement__header-wrapper {
+    margin: 0 40px;
   }
 
+  /* Le titre */
+  .fiche-logement__title {
+    font-size: 18px; /* Taille réduite */
+    text-align: left; /* Alignement à gauche */
+  }
+
+  /* Le sous-titre/location ne bouge pas */
+  p.fiche-logement__location {
+    margin-top: 30px; /* Garde un espacement de 30px */
+  }
+
+  /* Conteneur pour les tags et ratings */
+  .tags_ratings {
+    margin-top: 30px; /* Ajuste l'espacement */
+    display: flex;
+    justify-content: space-between; /* Alignement des tags à gauche et ratings à droite */
+    align-items: flex-start;
+  }
+
+  /* Les tags */
+  .fiche-logement__tags {
+    display: flex;
+    flex-wrap: nowrap; /* Pas de retour à la ligne */
+    gap: 10px; /* Espacement réduit entre les tags */
+  }
+
+  .fiche-logement__tag {
+    font-size: 12px; /* Réduit la taille du texte */
+    padding: 3px 20px; /* Réduit le padding */
+  }
+
+  /* Les ratings */
   .fiche-logement__rating {
     display: flex;
-    justify-content: flex-start;
-    padding-top: 40px;
+    justify-content: flex-start; /* Alignement à gauche */
+    gap: 5px; /* Espacement entre les étoiles */
+    margin-top: 50px;
   }
+
+  /* Le host (nom et image) */
+  .fiche-logement__host {
+    display: flex;
+    align-items: center; /* Centre verticalement */
+    justify-content: flex-end; /* Alignement à droite */
+    margin-left: auto; /* Force l'alignement à droite de l'ensemble */
+    margin-top: 170px;
+  }
+
+  p.fiche-logement__host-name {
+    padding-right: 5px; /* Espacement réduit entre le nom et l'image */
+    color: #ff6060; /* Conserve la couleur */
+  }
+
   img.fiche-logement__host-picture {
-    width: 32px;
+    width: 32px; /* Taille réduite */
     height: 32px;
-    margin-top: 20px;
+    border-radius: 50%; /* Conserve la forme ronde */
   }
 }
