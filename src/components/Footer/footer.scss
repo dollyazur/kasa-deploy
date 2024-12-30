@@ -2,4 +2,47 @@
   display: flex;
   justify-content: center;
   padding-top: 60px;
+
+  img {
+    width: 100%; // L'image s'adapte à toute la largeur de l'écran
+  }
+
+  @media (max-width: 768px) {
+    padding-top: 30px; // Réduction du padding sur les écrans moyens
+
+    img {
+      width: 100%; // L'image continue de prendre toute la largeur
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding-top: 20px; // Réduction supplémentaire pour les petits écrans
+
+    img {
+      width: 100%; // L'image reste responsive et occupe toute la largeur
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_desktop {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .footer_mobile {
+    visibility: visible;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .footer_desktop {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .footer_mobile {
+    visibility: hidden;
+    width: 0;
+  }
 }

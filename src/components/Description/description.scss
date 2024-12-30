@@ -58,8 +58,18 @@ p.fiche-logement__host-name {
 
 @media (max-width: 768px) {
   .fiche-logement__host {
+    display: flex;
+    margin-top: 130px;
   }
 
   .fiche-logement__rating {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+  img.fiche-logement__host-picture {
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
   }
 }
