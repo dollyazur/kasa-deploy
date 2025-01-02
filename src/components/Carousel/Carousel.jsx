@@ -1,17 +1,9 @@
 import React, { useState } from "react";
 // On utilise React pour créer notre carrousel, et `useState` pour savoir quelle image on regarde.
-
 import "./carousel.scss";
-// On importe les styles pour que le carrousel soit joli.
-
 import arrowLeft from "../../images/Carrousel_ex/arrow_left.png";
-// On importe l'image de la flèche gauche.
-
 import arrowRight from "../../images/Carrousel_ex/arrow_right.png";
-// On importe l'image de la flèche droite.
-
 import arrowLeftPetit from "../../images/Carrousel_ex/arrow_left-24px.png";
-
 import arrowRightPetit from "../../images/Carrousel_ex/arrow_right_24px.png";
 
 function Carousel({ pictures }) {
@@ -98,4 +90,3 @@ function Carousel({ pictures }) {
 }
 
 export default Carousel;
-// On termine le composant et on le rend disponible pour d'autres fichiers.
