@@ -7,8 +7,10 @@ import Footer from "../components/Footer/Footer.jsx";
 function Erreur() {
   return (
     <div>
-      <Header />
-      <Error404 />
+      <div className="erreur__content">
+        <Header />
+        <Error404 />
+      </div>
       <Footer />
     </div>
   );

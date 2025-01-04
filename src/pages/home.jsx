@@ -9,12 +9,13 @@ import image1 from "../images/images_sources/Image_source_1.png";
 function Home() {
   return (
     <div>
-      <Header />
+      <div className="home__content">
+        <Header />
 
-      <Banner image={image1} text="Chez vous, partout et ailleurs" />
+        <Banner image={image1} text="Chez vous, partout et ailleurs" />
 
-      <Cards />
-
+        <Cards />
+      </div>
       <Footer />
     </div>
   );

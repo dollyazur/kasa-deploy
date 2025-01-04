@@ -61,9 +61,9 @@ function FicheLogement() {
   return (
     <div className="fiche-logement">
       {/* Conteneur principal */}
-      <Header />
-
       <div className="fiche-logement__content">
+        <Header />
+
         {/* Conteneur pour le contenu principal de la page */}
 
         {/* Carrousel */}

@@ -1,7 +1,7 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "../Home.jsx";
+import Home from "../home.jsx";
 import Propos from "../Propos.jsx";
 import FicheLogement from "../FicheLogement.jsx";
 import Erreur from "../Erreur.jsx";

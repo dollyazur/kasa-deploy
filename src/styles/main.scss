@@ -24,6 +24,9 @@ body {
   }
 }
 
-.propos__content {
+.propos__content,
+.home__content,
+.fiche-logement__content,
+.erreur__content {
   margin: 0 40px; /* Applique les marges à droite et à gauche du contenu */
 }
