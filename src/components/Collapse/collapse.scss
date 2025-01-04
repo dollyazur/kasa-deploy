@@ -21,7 +21,7 @@
   }
 
   &__button {
-    background-image: url("../../images/arrow_collapse/arrow_down.png"); /* Image flèche vers le bas */
+    background-image: url("../../images/arrow_collapse/arrow_up.png"); /* Image flèche vers le bas */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -37,7 +37,7 @@
     }
 
     &.open {
-      background-image: url("../../images/arrow_collapse/arrow_up.png"); /* Image flèche vers le haut */
+      background-image: url("../../images/arrow_collapse/arrow_down.png"); /* Image flèche vers le haut */
     }
   }
 
