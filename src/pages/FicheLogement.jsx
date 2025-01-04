@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 // On importe `useParams` pour récupérer l’id du logement dans l’URL.
 
 import { useFetch } from "../useFetch";
@@ -20,7 +20,7 @@ function FicheLogement() {
 
   const { id } = useParams();
   // On récupère l’`id` du logement depuis l’URL, par exemple `/housing/1`.
-
+  const navigate = useNavigate();
   const { data: cards, error } = useFetch("/data.json");
   // On utilise `useFetch` pour récupérer toutes les cartes (logements) depuis le fichier `data.json`.
 
@@ -39,11 +39,7 @@ function FicheLogement() {
 
   if (!logement) {
     // Si aucun logement n'est trouvé, redirection vers la page d'erreur.
-    React.useEffect(() => {
-      navigate("/erreur");
-    }, [navigate]);
-    return null;
-    // On retourne `null` car la redirection est en cours.
+    return navigate("/Error404");
   }
 
   const {
@@ -62,9 +58,8 @@ function FicheLogement() {
     <div className="fiche-logement">
       {/* Conteneur principal */}
       <div className="fiche-logement__content">
-        <Header />
-
         {/* Conteneur pour le contenu principal de la page */}
+        <Header />
 
         {/* Carrousel */}
         <Carousel pictures={pictures} />
